@@ -12,9 +12,9 @@ public class Problem3Test {
 
         //when
         String actual = Problem3.methodMan(n);
-        String expected = "1, 2, Wu, 4, Tang, Wu, 7, 9, Wu";
+        String expected = "1, 2, Wu, 4, Tang, Wu, 7, 8, Wu";
         //then
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class Problem3Test {
 
         //when
         String actual = Problem3.methodMan(n);
-        String expected = "1, 2, Wu, 4, Tang, Wu, 7, 9, Wu, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20";
+        String expected = "1, 2, Wu, 4, Tang, Wu, 7, 8, Wu, Tang, 11, Wu, 13, 14, WuTang, 16, 17, Wu, 19, Tang";
         //then
         Assert.assertEquals(actual, expected);
     }
@@ -36,7 +36,7 @@ public class Problem3Test {
 
         //when
         String actual = Problem3.methodMan(n);
-        String expected = "1, 2, Wu, 4, Tang, Wu, 7, Wu, Tang, 11, Wu, 13, 14, WuTang, 16, 17, Wu, 19, Tang, Wu, 22, 23, Wu, Tang, 26, Wu, 28, 29, WuTang";
+        String expected = "1, 2, Wu, 4, Tang, Wu, 7, 8, Wu, Tang, 11, Wu, 13, 14, WuTang, 16, 17, Wu, 19, Tang, Wu, 22, 23, Wu, Tang, 26, Wu, 28, 29, WuTang";
         //then
         Assert.assertEquals(actual, expected);
 
